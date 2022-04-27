@@ -1,0 +1,152 @@
+:root {
+    --basic-yellow: #FFD700;
+    --basik-blue: #3352DC;
+    --basik-white: #fff;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1244px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.intro {
+    background-color: var(--basik-blue);
+    color: var(--basik-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 587px;
+    background-image: url("img/Vector.png");
+    background-repeat: repeat-x;
+    background-position: 0 106%;
+}
+
+.intro--wrapp {
+    text-align: center;
+    width: 820px;
+}
+
+.intro__title {
+    text-transform: uppercase;
+}
+
+.container {}
+
+.ask {
+    background-color: var(--basic-yellow);
+    position: relative;
+    padding-bottom: 203px;
+    display: flex;
+    justify-content: center;
+}
+
+.ask__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.ask__link:hover {
+    text-decoration: underline;
+}
+
+.ask__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.ask__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.ask__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ask__item {
+    width: 820px;
+    height: 160px;
+    background-color: var(--basik-white);
+    border-radius: 10px;
+    margin-bottom: 85px;
+    margin-top: -60px;
+    cursor: pointer;
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.ask__item:hover {
+    filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 148px;
+}
+
+.footer__text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.footer__text--yellow {
+    color: var(--basic-yellow);
+}
+
+.footer__text--blue {
+    color: var(--basik-blue)
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
